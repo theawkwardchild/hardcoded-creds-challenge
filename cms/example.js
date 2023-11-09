@@ -79,7 +79,7 @@ app.get('/public/fact', function(req, res, next) {
     <p>
     ${ factText[randomFact] }
     </p>
-    <img src="/${ randomFact }.png" />
+    <img src="https://cms.thismaybedown.online/${ randomFact }.png" />
     </div>
     </body>
     </html>`)
