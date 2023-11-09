@@ -1,9 +1,10 @@
 const express = require('express')
 
 var path = require('path');
-var app = express()
+var app = express();
+var cors = cors()
 
-
+app.use(cors())
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
