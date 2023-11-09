@@ -2,7 +2,7 @@ const express = require('express')
 
 var path = require('path');
 var app = express();
-var cors = cors()
+var cors = require("cors")
 
 app.use(cors())
 // view engine setup
