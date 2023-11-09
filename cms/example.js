@@ -5,6 +5,8 @@ var app = express()
 var cors = require('cors')
 const basicAuth = require('./index.js')
 
+var logger = require('morgan');
+app.use(logger('short'));
 //Requires basic auth with username 'Admin' and password 'secret1234'
 var staticUserAuth = basicAuth({
     users: {
